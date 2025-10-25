@@ -1,0 +1,27 @@
+main{
+    display: grid;
+    grid-template-areas: 
+    'sidebar sidebar citydetails citydetails '
+    ;
+
+    aside{
+    grid-area:sidebar ;
+    padding: 1rem;
+    background-color: color-shade(get-color(bg) , 30%);
+    
+    a{
+        display: block;
+        padding: 5px;
+        color: get-color(text);
+
+    }
+    }
+    section{
+        padding: 1rem;
+        grid-area:  citydetails;
+        background-color: color-shade(get-color(bg),10%);
+        color: get-color(text);
+          
+    }
+
+}

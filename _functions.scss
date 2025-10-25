@@ -1,0 +1,20 @@
+@function get-color($key) {
+    @if($theme==dark) {
+        @return map-get($dark-theme , $key )
+    }
+
+    @else {
+        @return map-get($light-theme , $key )
+    }
+
+}
+
+@function color-shade($color, $persntage) {
+    @if($theme==dark){
+        @return lighten($color, $persntage);
+    }
+    @else{
+         @return lighten($color, $persntage);
+    }
+    
+}

@@ -1,0 +1,8 @@
+footer{
+    background-color: color-shade(get-color(bg) , 20%);
+    padding: 30px;
+    h2{
+        text-align: center;
+        color: get-color(text);
+    }
+}
